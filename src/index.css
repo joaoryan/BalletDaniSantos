@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:regular,bold,italic&subset=latin,latin-ext');
+
+body {
+  margin: 0;
+  font-family: Raleway, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #424242;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8b8b8b;
+  border-radius: 5px;
+}
