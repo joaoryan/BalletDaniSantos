@@ -33,10 +33,14 @@ export const Image = styled.div`
 `;
 
 export const Container = styled.div`
-  width: 100%;
+  //width: 100vw;
   overflow: auto;
   display: flex;
   justify-content: space-around;
+  @media (max-width: 800px) {
+    padding: 0px 20px;
+    flex-direction: column;
+  }
 `;
 
 export const DivText = styled.div`
@@ -56,6 +60,10 @@ export const DivImagens = styled.div`
   height: 600px;
   padding: 20px;
   gap: 5px;
+
+  @media (max-width: 800px) {
+    height: auto;
+  }
 `;
 
 export const Title = styled.div`

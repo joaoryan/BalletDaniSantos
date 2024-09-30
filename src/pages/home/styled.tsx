@@ -10,8 +10,8 @@ export const Page = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-//  padding: 40px 90px;
-  margin-bottom: 50px;
+ // width: 100vw;
+  overflow-x: hidden;
   gap: 200px;
   overflow-y: scroll; /* Permite rolar verticalmente */
   
@@ -20,7 +20,8 @@ export const Page = styled.div`
     display: none; /* Esconde a barra de rolagem */
   }
   @media (max-width: 800px) {
-    padding: 10px 26px;
+    //padding: 10px 26px;
+    gap: 50px;
   }
 `;
 
@@ -31,16 +32,22 @@ export const Page = styled.div`
 `; */
 
 export const Image = styled.div<ImageProps>`
-  width: 100%;
+  width: 100vw;
   height: 700px;
   background-image: linear-gradient(
     to top right,
     #FDECEF 15%, /* Deixa o canto inferior esquerdo mais escuro */
       rgba(0, 0, 0, 0) 60%    /* Transparente no canto superior direito */
     ), url(${props => props.src || '/default-image.jpg'});
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
-
+  @media (max-width: 800px) {
+    background-image: linear-gradient(
+    to top right,
+    #FDECEF 15%, /* Deixa o canto inferior esquerdo mais escuro */
+      rgba(0, 0, 0, 0) 70%    /* Transparente no canto superior direito */
+    ), url(${props => props.src || '/default-image.jpg'});
+  }
 `;
 
 
@@ -55,7 +62,7 @@ export const Container = styled.div`
 export const DivText = styled.div`
     max-width: 600px;
     height: 100%;
-    width: 100%;
+    width: 100vw;
     overflow: auto;
     display: flex;
     justify-content: flex-end;
@@ -64,7 +71,11 @@ export const DivText = styled.div`
     flex-direction: column;
     justify-content: center;
     padding: 120px 90px;
-  
+   @media (max-width: 800px) {
+    padding: 120px 20px;
+    width: 90%;
+    height: 600px;
+  }
 `;
 
 
@@ -73,8 +84,12 @@ export const Title = styled.div`
   margin: 0px 0px 30px 0px;
   font-weight: 600;
   color: #FF69B4;
+  @media (max-width: 800px) {
+    font-size: 30px;
+    margin: 0px 0px 20px 0px;
+  }
   @media (max-width: 500px) {
-    font-size: 24px;
+    font-size: 28px;
     margin: 0px 0px 20px 0px;
   }
 `;
@@ -95,8 +110,11 @@ export const Text = styled.div`
   margin: 20PX 0px;
   font-weight: 400;
   color: #4D4D4D ;
+  width: 100%;
   @media (max-width: 500px) {
     font-size: 18px;
+    color: black;
+    //padding: 0px 10px;
   }
   a{
     border-bottom: 1px dashed #f0a63b; // #f3b755; //#F27100

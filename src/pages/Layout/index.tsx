@@ -9,9 +9,6 @@ const Layout = () => {
   return (
     <>
       <Container>
-        {/* <SideMenu>
-          <Header />
-        </SideMenu> */}
         <Section>
           <Outlet />
         </Section>

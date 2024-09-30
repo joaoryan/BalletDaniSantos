@@ -23,8 +23,6 @@ const Container = styled.div`
 
 // Card externo
 const OuterCard = styled.div<VisibilityProps>`
- 
-  
   position: relative;
   display: flex;
   justify-content: center;
@@ -36,6 +34,13 @@ const OuterCard = styled.div<VisibilityProps>`
   img{
     width: 650px;
     border-radius: 15px;
+  }
+
+  @media (max-width: 800px) {
+    img{
+      width: 400px;
+      border-radius: 15px;
+    }
   }
 `;
 

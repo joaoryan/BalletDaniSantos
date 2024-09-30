@@ -53,9 +53,13 @@ const Column = styled.div`
 const Carousel = styled.div<{ speed: number; reverse?: boolean }>`
   display: flex;
   flex-direction: column;
-  position: absolute;
   top: 0;
   animation: ${({ reverse }) => (reverse ? moveDown : moveUp)} 30s linear infinite;
+  height: 200px;
+  @media (max-width: 800px) {
+    animation: ${({ reverse }) => (reverse ? moveDown : moveUp)} 3s linear infinite;
+    align-items: center;
+  }
 `;
 
 // Card externo com transição de opacidade
@@ -87,6 +91,8 @@ const OuterCard = styled.div<{ opacity: number }>`
     border-color: #f0f0f0 transparent transparent transparent;
   }
 
+ 
+
 `;
 
 const BubbleContainer = styled.div`
@@ -112,6 +118,11 @@ const BubbleContainer = styled.div`
     border-width: 10px;
     border-style: solid;
     border-color: #f0f0f0 transparent transparent transparent;
+  }
+
+  @media (max-width: 800px) {
+    width: 300px;
+    height: 200px;
   }
 `;
 

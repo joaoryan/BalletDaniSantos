@@ -4,7 +4,7 @@ const width = '660px'
 
 export const Section = styled.div`
 	text-transform: none;
-	width: 100%;
+	width: 100vw;
   height: 100vh;
   overflow-y: auto;
   background: #FDECEF ;
@@ -24,6 +24,9 @@ export const Container = styled.div`
   flex-direction: column;
 	height: 100vh;
 	width: 100vw;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
   color: #8899a6;
   font-weight: 300;
   line-height: 1.7;

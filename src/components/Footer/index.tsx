@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
 
 // Estilizando o container principal do footer
 const FooterContainer = styled.footer`
@@ -55,6 +56,13 @@ const SiteMap = styled.div`
     text-decoration: none;
   }
 
+  
+  span {
+    font-size: 14px;
+    color: #2C2C2C ;
+    text-decoration: none;
+  }
+
   a:hover {
     color: #8a8acb;
   }
@@ -82,11 +90,18 @@ const Footer = () => {
       </InfoSection>
       <InfoSection>
         <h3>CONTATO</h3>
-        <a href="https://wa.me/553599372979">+55 35 99937-2979</a>
+        <a href="https://wa.me/5535998236000" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: '#2C2C2C', display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <FaWhatsapp size={30} color="#25D366" />
+          <span>WhatsApp</span> {/* Texto ao lado do ícone */}
+        </a>
+
       </InfoSection>
       <InfoSection>
         <h3>NOSSOS CANAIS</h3>
-        <a href="">Instagram</a><br />
+        <a href="https://instagram.com/seuPerfilInstagram" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: '#2C2C2C', display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <FaInstagram size={30} color="#E4405F" />
+          Instagram {/* Texto ao lado do ícone */}
+        </a>
       </InfoSection>
       <Copyright>
         ©2024 Desenvolvido por João Ryan dos Santos.

@@ -33,12 +33,19 @@ export const Image = styled.div`
 `;
 
 export const Container = styled.div`
-  width: 100%;
-  height: 500px;
+ width: 100%;
+  height: 600px;
   gap: 200px;
   overflow: hidden;
   display: flex;
   justify-content: center;
+  @media (max-width: 500px) {
+    align-items: center;
+    flex-direction: column;
+    height: 900px;
+    width: 90%;
+  }
+  
 `;
 
 export const DivText = styled.div`
@@ -47,6 +54,9 @@ export const DivText = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   width: 500px;
+  @media (max-width: 500px) {
+    width: auto;
+  }
 `;
 
 export const DivImagens = styled.div`
@@ -55,14 +65,18 @@ export const DivImagens = styled.div`
     height: 100%;
     max-width: 100%;
     max-height: 100%;
-    place-items: center;
+    //place-items: center;
     margin: 0px;
     padding: 0px;
-    list-style-type: none;
+  //  list-style-type: none;
     gap: 10px;
-    position: relative;
+    //position: relative;
     flex-direction: column;
     will-change: transform;
+    @media (max-width: 500px) {
+      height: 200px;
+      max-height: 100px;
+  }
 `;
 
 export const Title = styled.div`
