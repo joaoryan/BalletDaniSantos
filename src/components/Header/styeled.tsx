@@ -4,7 +4,7 @@ import * as color from '../../styles/color';
 export const Content = styled.div`
   display: flex;
   align-items: center;  
-  justify-content: flex-end;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -12,7 +12,8 @@ export const Content = styled.div`
   height: 70px;
   z-index: 3;
   gap: 30px;
-  background: rgba(0, 0, 0, 0.5); 
+  background: #F9C9D4; 
+  opacity: 0.5;
   backdrop-filter: blur(10px);   
   
  
@@ -32,7 +33,7 @@ export const Pages = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 20px;
 `;
 
@@ -42,7 +43,8 @@ export const page = styled.div`
   align-items: center;
   justify-content: center;
   transition: 0.5s;
-
+  font-weight: 800;
+  opacity: 1 !important;
   & > a{
     width: 100%;
     color: #8899a6;;
@@ -55,9 +57,9 @@ export const page = styled.div`
     color: white
   }
   .active {
-   color: #f0a63b // #f3b755; //#F27100
+   color: #FF69B4 // #f3b755; //#F27100
   }
   .active:hover {
-    color: #f3b755; //#F27100
+    color: #FF69B4; //#F27100
   }
 `;

@@ -7,7 +7,7 @@ export const Section = styled.div`
 	width: 100%;
   height: 100vh;
   overflow-y: auto;
-  background: #0e0e0e;
+  background: #FDECEF ;
 `;
 
 export const Header = styled.div`

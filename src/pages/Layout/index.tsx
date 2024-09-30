@@ -9,9 +9,9 @@ const Layout = () => {
   return (
     <>
       <Container>
-        <SideMenu>
+        {/* <SideMenu>
           <Header />
-        </SideMenu>
+        </SideMenu> */}
         <Section>
           <Outlet />
         </Section>

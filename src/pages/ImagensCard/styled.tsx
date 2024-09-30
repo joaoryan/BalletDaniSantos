@@ -61,6 +61,8 @@ export const DivImagens = styled.div`
 export const Title = styled.div`
   font-size: 30px;
   margin: 0px 0px 30px 0px;
+  font-weight: 600;
+  color: #FF69B4;
   @media (max-width: 500px) {
     font-size: 24px;
     margin: 0px 0px 20px 0px;
@@ -81,6 +83,7 @@ export const SubTitle = styled.div`
 export const Text = styled.div`
   font-size: 20px;
   margin: 20PX 0px;
+  color: #4D4D4D;
   @media (max-width: 500px) {
     font-size: 18px;
   }

@@ -35,8 +35,8 @@ export const Image = styled.div<ImageProps>`
   height: 700px;
   background-image: linear-gradient(
     to top right,
-      rgba(0, 0, 0, 0.7) 20%, /* Deixa o canto inferior esquerdo mais escuro */
-      rgba(0, 0, 0, 0) 50%    /* Transparente no canto superior direito */
+    #FDECEF 15%, /* Deixa o canto inferior esquerdo mais escuro */
+      rgba(0, 0, 0, 0) 60%    /* Transparente no canto superior direito */
     ), url(${props => props.src || '/default-image.jpg'});
   background-position: left;
   background-repeat: no-repeat;
@@ -72,6 +72,7 @@ export const Title = styled.div`
   font-size: 40px;
   margin: 0px 0px 30px 0px;
   font-weight: 600;
+  color: #FF69B4;
   @media (max-width: 500px) {
     font-size: 24px;
     margin: 0px 0px 20px 0px;
@@ -93,6 +94,7 @@ export const Text = styled.div`
   font-size: 20px;
   margin: 20PX 0px;
   font-weight: 400;
+  color: #4D4D4D ;
   @media (max-width: 500px) {
     font-size: 18px;
   }
