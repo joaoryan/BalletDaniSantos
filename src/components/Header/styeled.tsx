@@ -5,10 +5,17 @@ export const Content = styled.div`
   display: flex;
   align-items: center;  
   justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 50px;
-  margin: 10px 40px;
+  height: 70px;
+  z-index: 3;
   gap: 30px;
+  background: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(10px);   
+  
+ 
 `;
 
 export const Title = styled.div`

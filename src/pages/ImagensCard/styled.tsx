@@ -52,7 +52,8 @@ export const DivImagens = styled.div`
   flex-direction: column;
   align-items: center;
   overflow-y: auto;
-  height: 500px;
+  overflow-x: hidden;
+  height: 600px;
   padding: 20px;
   gap: 5px;
 `;

@@ -1,9 +1,12 @@
 import React from 'react';
 import * as Styled from './styled';
 import ProjectCard from '../../components/ProjectCard';
-import img from '../../assets/image/AgroControl.png';
 import { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
+import img1 from '../../assets/image/img1.jpg';
+import img2 from '../../assets/image/img2.jpg';
+import img3 from '../../assets/image/img3.jpg';
+import img4 from '../../assets/image/img4.jpg';
 
 interface VisibilityProps {
   isVisible: boolean;
@@ -31,7 +34,7 @@ const OuterCard = styled.div<VisibilityProps>`
   transform: ${({ isVisible }) => (isVisible ? 'translateY(0)' : 'translateY(50px)')};
   transition: transform 0.5s ease, opacity 0.5s ease;
   img{
-    width: 600px;
+    width: 650px;
     border-radius: 15px;
   }
 `;
@@ -49,7 +52,11 @@ const InnerCard = styled.div<VisibilityProps>`
   transition: top 0.6s ease;
 `;
 
-const Card: React.FC = () => {
+interface CardProps {
+  img: string; // Definindo que img é uma string (URL da imagem)
+}
+
+const Card: React.FC<CardProps> = ({ img }) => {
   const [isVisible, setIsVisible] = useState(false);
   const cardRef = useRef<HTMLDivElement | null>(null);
 
@@ -88,16 +95,17 @@ export function ImagensCard(): JSX.Element {
   return (
     <Styled.Container>
       <Styled.DivText>
-        <Styled.Title>Ballet Dani Santos</Styled.Title>
+        <Styled.Title>Descubra a Arte do Ballet</Styled.Title>
         <Styled.Text>
-          fotoooooo
+          Explore as belíssimas apresentações e momentos capturados na nossa escola de ballet. Cada foto conta a história de dedicação, graça e paixão pela dança.
         </Styled.Text>
       </Styled.DivText>
       <Styled.DivImagens>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card img={img1} />
+        <Card img={img2} />
+        <Card img={img3} />
+        <Card img={img4} />
+        <Card img={''} />
       </Styled.DivImagens>
     </Styled.Container>
   );

@@ -93,7 +93,8 @@ export function Feedback(): JSX.Element {
   return (
     <Styled.Container>
       <Styled.DivText>
-        <Styled.Title>O que clientes e pensam sobre ballet</Styled.Title>
+        <Styled.Title>Depoimentos dos Pais</Styled.Title>
+        <Styled.Text>Agradecemos a confiança dos pais que escolheram nossa escola de ballet para o desenvolvimento artístico de seus filhos. Aqui estão algumas das opiniões sobre a experiência de seus pequenos dançarinos.</Styled.Text>
       </Styled.DivText>
       <Styled.DivImagens>
 

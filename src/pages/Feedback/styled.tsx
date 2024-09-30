@@ -46,6 +46,7 @@ export const DivText = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  width: 500px;
 `;
 
 export const DivImagens = styled.div`
