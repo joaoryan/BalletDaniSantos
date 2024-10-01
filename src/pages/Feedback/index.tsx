@@ -30,6 +30,15 @@ const moveDown = keyframes`
   }
 `;
 
+const moveRigthDown = keyframes`
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+`;
+
 // Container principal que envolverá todos os cards
 const MainContainer = styled.div`
   display: flex;
@@ -54,10 +63,13 @@ const Carousel = styled.div<{ speed: number; reverse?: boolean }>`
   display: flex;
   flex-direction: column;
   top: 0;
-  animation: ${({ reverse }) => (reverse ? moveDown : moveUp)} 30s linear infinite;
-  height: 200px;
-  @media (max-width: 800px) {
-    animation: ${({ reverse }) => (reverse ? moveDown : moveUp)} 3s linear infinite;
+  animation: ${({ reverse }) => (reverse ? moveDown : moveUp)} 40s linear infinite;
+  @media (max-width: 1000px) {
+    top: 50;
+    width: 100vw;
+    gap: 10px;
+    flex-direction: row;
+    animation: ${moveRigthDown} 40s linear infinite;
     align-items: center;
   }
 `;
@@ -96,8 +108,8 @@ const OuterCard = styled.div<{ opacity: number }>`
 `;
 
 const BubbleContainer = styled.div`
-  position: relative;
-  max-width: 300px;
+ // position: relative;
+  //max-width: 300px;
   padding: 15px;
   background-color: #f0f0f0;
   border-radius: 20px;
@@ -108,21 +120,8 @@ const BubbleContainer = styled.div`
   align-items: center;
   text-align: center;
 
-  // Pseudo-elemento para criar o efeito de balão
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-width: 10px;
-    border-style: solid;
-    border-color: #f0f0f0 transparent transparent transparent;
-  }
-
   @media (max-width: 800px) {
-    width: 300px;
-    height: 200px;
+    width: 400px;
   }
 `;
 
@@ -130,6 +129,8 @@ const FeedbackText = styled.p`
   font-size: 1rem;
   color: #333;
   margin: 0;
+  width: 200px;
+  height: 170px;
 `;
 
 const NameTag = styled.div`
