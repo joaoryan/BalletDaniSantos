@@ -33,13 +33,16 @@ export const Image = styled.div`
 `;
 
 export const Container = styled.div`
-  //width: 100vw;
+  width: 100%;
   overflow: auto;
   display: flex;
+  overflow-x: none;
   justify-content: space-around;
   @media (max-width: 800px) {
-    padding: 0px 20px;
-    flex-direction: column;
+    display: flex;
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
   }
 `;
 
@@ -49,6 +52,9 @@ export const DivText = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  @media (max-width: 800px) {
+    width: 80%;
+  }
 `;
 
 export const DivImagens = styled.div`

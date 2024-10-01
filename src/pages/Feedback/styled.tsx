@@ -35,15 +35,17 @@ export const Image = styled.div`
 export const Container = styled.div`
  width: 100%;
   height: 600px;
-  gap: 200px;
+  gap: 20px;
   overflow: hidden;
   display: flex;
   justify-content: center;
-  @media (max-width: 500px) {
-    align-items: center;
-    flex-direction: column;
-    height: 900px;
-    width: 90%;
+  @media (max-width: 1000px) {
+    display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        justify-content: flex-start;
   }
   
 `;
@@ -55,7 +57,7 @@ export const DivText = styled.div`
   justify-content: flex-start;
   width: 500px;
   @media (max-width: 500px) {
-    width: auto;
+    width: 95%;
   }
 `;
 
@@ -72,10 +74,10 @@ export const DivImagens = styled.div`
     gap: 10px;
     //position: relative;
     flex-direction: column;
-    will-change: transform;
+   // will-change: transform;
     @media (max-width: 500px) {
-      height: 200px;
-      max-height: 100px;
+      height: auto;
+     // max-height: 100px;
   }
 `;
 

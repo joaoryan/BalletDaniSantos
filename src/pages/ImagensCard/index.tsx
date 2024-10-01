@@ -38,7 +38,7 @@ const OuterCard = styled.div<VisibilityProps>`
 
   @media (max-width: 800px) {
     img{
-      width: 400px;
+      width: 350px;
       border-radius: 15px;
     }
   }
