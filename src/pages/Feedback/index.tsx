@@ -4,6 +4,7 @@ import ProjectCard from '../../components/ProjectCard';
 import img from '../../assets/image/AgroControl.png';
 import { useEffect, useRef, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
+import CardMatricula from '../Card';
 
 interface FeedbackBubbleProps {
   feedback: string;
@@ -232,6 +233,7 @@ export function Feedback(): JSX.Element {
 
 
       </Styled.DivImagens>
+      <CardMatricula />
     </Styled.Container >
   );
 }

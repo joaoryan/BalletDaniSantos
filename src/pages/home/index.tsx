@@ -7,6 +7,7 @@ import * as Styled from './styled';
 import { ImagensCard } from '../ImagensCard';
 import { Feedback } from '../Feedback';
 import Footer from '../../components/Footer';
+import CardMatricula from '../Card';
 
 //icons
 

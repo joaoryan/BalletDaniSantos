@@ -69,6 +69,7 @@ export const DivImagens = styled.div`
 
   @media (max-width: 800px) {
     height: auto;
+    padding: 0px;
   }
 `;
 
