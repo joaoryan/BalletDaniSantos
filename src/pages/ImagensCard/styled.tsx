@@ -132,3 +132,30 @@ export const Icon = styled.div`
     font-size: 30px;
   }
 `;
+
+interface VisibilityProps {
+  isVisible: boolean;
+}
+
+
+export const OuterCard = styled.div<VisibilityProps>`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
+  transform: ${({ isVisible }) => (isVisible ? 'translateY(0)' : 'translateY(50px)')};
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  img{
+    width: 650px;
+    border-radius: 15px;
+  }
+
+  @media (max-width: 800px) {
+    img{
+      width: 350px;
+      border-radius: 15px;
+    }
+  }
+`;
